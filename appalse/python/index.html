@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Appalse</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__btns">
+			<button class="header__btn" id="header-btn-about">About me</button>
+			<button class="header__btn" id="header-btn-projects">Projects</button>
+			<button class="header__btn" id="header-btn-blog">Blog</button>
+			<button class="header__btn" id="header-btn-contacts">Contacts</button>
+		</div>
+	</header>
+
+	<footer class="footer">TODO Footer: Contacts, copyright information, back to top links, sitemap</footer>
+
+	<main class="main">
+		<section class="main__subsection presentation">
+			<h1 class="subsection__header">About me:</h1>
+			<p class="presentation__text"> Hello, my name is appalse. I'm a developer.  
+				Please, see below my projects and my blog. 
+				In order to contact me you could use contact form in the bottom of this page or write an email. 
+			</p>	
+		</section>
+
+
+		<section class="main__subsection">	
+			<h1 class="subsection__header">My projects:</h1>
+			<div class="projects">
+				<div class="project project__memoji-game">
+					<p class="caption">Memoji web-game</p>
+					<div class="icon"></div>				
+				</div>
+				<div class="project project__binary-calculator">
+					<p class="caption">Binary calculator online</p>
+					<div class="icon"></div>					
+				</div>
+			</div>	
+		</section>
+
+
+		<section class="main__subsection">
+			<h1 class="subsection__header">My blog:</h1>
+			<ul class="articles">
+				<li class="article article__opengl">
+					<p class="caption">How to use OpenGL in Ubuntu</p>
+				</li>
+				<li class="article article__feynman-tufte">
+					<p class="caption">The Feynman-Tufte Principle</p>
+				</li>
+				<li class="article article__virtualenv">
+					<p class="caption">About python virtualenv</p>
+				</li>
+				<li class="article article__cpp-types">
+					<p class="caption">C++ types</p>
+				</li>
+			</ul>
+		</section>
+
+
+		<section class="main__subsection">	
+			<h1 class="subsection__header">Contact form:</h1>
+			<form class="contact-form">
+				<div class="form-item form__name">
+					<label for="contact-name">Your name:</label>
+					<input type="text" id="contact-name">
+				</div>
+				<div class="form-item form__email">
+					<label for="contact-email">Your e-mail:</label>
+					<input type="text" id="contact-email">
+				</div>
+				<div class="form-item form__message">
+					<label for="contact-message">Your message:</label>
+					<textarea name="message-text" id="contact-message" cols="40" rows="5"></textarea>
+				</div>
+				<button class="form-btn">Send</button>
+			</form>
+		</section>
+
+		<section class="main__subsection">	
+			<h1 class="subsection__header">Contacts:</h1>
+				
+		</section>
+
+
+
+	</main>
+
+	<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
