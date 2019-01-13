@@ -18,6 +18,13 @@ body {
 
 }
 
+:target::before {
+	content: "";
+	display: block;
+	height: 100px; 
+	margin: -110px 0 0; 
+}
+
 .header {
 	order: 1;
 	width: 100%;
@@ -26,6 +33,7 @@ body {
 	padding: 18px;
 	background-color: whitesmoke;
 	border-bottom: solid 1px silver;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 .header__btns {
@@ -38,7 +46,6 @@ body {
 	font-size: 30px;
 	font-weight: bold;
 	border: none;
-	text-decoration: underline;
 	background-color: inherit;
 	margin: 15px;
 	padding: 5px;
@@ -46,7 +53,8 @@ body {
 
 .header__btn:hover,
 .project:hover,
-.article:hover {
+.article:hover,
+.contact-list > li:hover {
 	background: linear-gradient(45deg, silver, whitesmoke);
 	border-radius: 10px;
 }
@@ -55,6 +63,7 @@ body {
 	order: 3;
 	width: 100%;
 	text-align: center;
+	color: rgb(104,104,104);
 }
 
 .subsection__header {
@@ -67,15 +76,15 @@ body {
 	padding-top: 100px;
 }
 
-.main__subsection:first-of-type {
-	margin: 50px 20px;
-}
-
 .main__subsection {
-	margin: 100px 20px;
+	margin: 50px 20px 100px;
 }
 
-.presentation__text {
+.main__subsection:last-of-type {
+	margin-bottom: 150px;
+}
+
+.aboutme__text {
 	font-size: 20px;
 	text-align: justify;
 	padding: 20px;
@@ -88,7 +97,7 @@ body {
 	align-items: center;
 }
 
-.project {
+.project a {
 	margin: 20px 0;
 	padding: 8px;
 	display: flex;
@@ -102,11 +111,11 @@ body {
 	padding: 15px 0;
 }
 
-.project__memoji-game > .icon {
+.project__memoji-game > a > .icon {
 	background: url('project__memoji-game.png') no-repeat center;
 }
 
-.project__binary-calculator > .icon {
+.project__binary-calculator > a > .icon {
 	background: url('project__binary-calculator.png') no-repeat center;
 }
 
@@ -131,8 +140,35 @@ body {
 	text-align: center;
 }
 
-.contact-form {
-	padding-left: 10%;
+
+.subsection__contacts {
+	margin-left: 10%;
+	margin-right: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-list {
+	list-style: none;
+}
+
+.contact-list > li {
+	margin: 20px 0;
+	font-size: 25px;
+	padding: 5px;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.contact-form__header{
+	margin: 20px 0 10px;
+}
+
+.contact-icon {
+	margin: 0 15px;
 }
 
 .form-item > label,
@@ -140,6 +176,13 @@ body {
 .form-item > textarea {
 	margin: 20px 0;
 	font-size: 25px;
+}
+
+.form-item > input,
+.form-item > textarea {
+	border-radius: 5px;
+	border: solid 1px silver;
+	padding: 0 5px;
 }
 
 .form-item > label {
@@ -162,7 +205,7 @@ body {
 }
 
 .form-btn:hover {
-	background: linear-gradient(silver, rgb(232,232,232));
+	background: linear-gradient(whitesmoke, silver, rgb(232,232,232));
 }
 
 button:focus {
