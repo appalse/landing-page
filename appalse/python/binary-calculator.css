@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,6 +10,7 @@ body {
 
 .header {
   width: 100%;
+  padding: 40px 0;
   text-align: center;
   color: darkblue;
 }
@@ -44,4 +50,13 @@ body {
     margin: 0px;
     float: left;
     border-radius: 5px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(104,104,104);
+    padding: 10px 0;
 }

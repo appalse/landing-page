@@ -187,3 +187,11 @@ body {
 	}
 }
 
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(104,104,104);
+    padding: 10px 0;
+}
